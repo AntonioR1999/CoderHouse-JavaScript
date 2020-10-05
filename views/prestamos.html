@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Antonio Rodrigues ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,css,xml,javascript">
+    <title>Cotizador</title>
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <link rel="stylesheet" href="../assets/css/prestamos.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Rajdhani&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-menu">
+          <div class="header-menu-logo">
+              <a href="../index.html">Seguros Rodrigues</a>
+          </div>
+          <div class="header-menu-nav">
+              <a href="../index.html">Inicio</a>
+              <a href="../views/prestamos.html">Cotizar Seguro</a>
+              <a href="../views/contactos.html">Contactos</a>
+          </div>
+          <div class="header-menu-burger" id="menu-burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+          <div class="header-responsive-menu" id="menu-list">
+            <ul class="header-menu-list">
+              <li class="header-menu-link"><a href="#">Inicio</a></li>
+              <li class="header-menu-link"><a href="#">Prestamo</a></li>
+              <li class="header-menu-link"><a href="#">Contactos</a></li>
+            </ul>
+          </div>
+      </div>
+  </header> 
+<div class="container mx-auto">
+      <div id="contenido" class="pb-10">
+            <header class="bg-teal-500 text-white py-3 font-bold uppercase">
+                <h1 class="text-center">Cotiza tu seguro de Auto</h1>
+            </header>
+                <form class="mt-10 max-w-lg mx-auto" action="#" id="cotizar-seguro">
+                        <div class="flex items-center mb-5">
+                            <label 
+                              class="font-bold  uppercase mr-2 w-20"
+                              for="marca"
+                            >Marca:</label>
+                            <select class="flex-1 bg-gray-100 p-3 appearance-none" id="marca">
+                                <option value="">- Seleccionar -</option>
+                                <option value="1">Americano</option>
+                                <option value="2">Asiatico</option>
+                                <option value="3">Europeo</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center mb-5">
+                              <label 
+                                class="font-bold  uppercase mr-2 w-20"
+                                for="year"
+                              >Año:</label>
+                              <select  class="flex-1 bg-gray-100 p-3 appearance-none" id="year"></select>
+                        </div>
+                        <fieldset>
+                              <legend  class="font-bold  uppercase text-2xl text-center w-full">Tipo Seguro</legend>
+
+                              <div class="flex justify-around mt-5">
+                                  <div>
+                                      <label class="font-bold  uppercase mr-2">Básico</label>
+                                          <input type="radio" name="tipo" value="basico" checked>
+                                      </label>
+                                  </div>
+                                  <div>
+                                      <label class="font-bold  uppercase mr-2">Completo</label>
+                                          <input type="radio" name="tipo" value="completo">
+                                      </label>
+                                  </div>
+                              </div>
+                      </fieldset>
+
+                  <div id="cargando" class="hidden">
+                        <div class="spinner">
+                          <div class="rect1"></div>
+                          <div class="rect2"></div>
+                          <div class="rect3"></div>
+                          <div class="rect4"></div>
+                          <div class="rect5"></div>
+                      </div>
+                  </div>
+                  <div id="resultado"></div>
+                  <div class="flex  justify-center py-4">
+                      <button 
+                        type="submit" 
+                        class="mx-auto bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-20 rounded"
+                        >Cotizar Seguro
+                    </button>
+                  </div>
+ 
+                </form> 
+      </div> <!--#contenido-->
+</div>
+<footer id="footer" class="footer">
+  <!-- Menú flotante -->
+  <div class="menu-content">
+    <span class="menu-item" id="menu">
+        <img src="../assets/img/plus.svg" alt="Más">
+    </span>
+    <a href="https://github.com/AntonioR1999" target="_blank" class="menu-item">
+        <img src="../assets/img/github.svg" alt="github">
+    </a>
+    <a href="https://www.facebook.com/antonio.escobar.1999/" target="_blank" class="menu-item">
+        <img src="../assets/img/facebook.svg" alt="Facebook">
+    </a>
+    <a href="https://www.linkedin.com/in/antonio-rodrigues-25280017b/" target="_blank" class="menu-item">
+        <img src="../assets/img/linkedin.svg" alt="linkedin">
+    </a>
+</div>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/script.js"></script>
+  </body>
+</html>

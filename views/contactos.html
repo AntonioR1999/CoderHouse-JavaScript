@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Antonio Rodrigues ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html,css,xml,javascript">
+    <title>Contacto </title>
+    <link rel="shortcut icon" href="../assets/img/logo-antonio.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Rajdhani&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-other">
+        <div class="header-menu">
+            <div class="header-menu-logo">
+                <a href="..index.html">Seguros Rodrigues</a>
+            </div>
+            <div class="header-menu-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="prestamos.html">Cotizar Seguro</a>
+                <a href="contactos.html">Contactos</a>
+            </div>
+            <div class="header-menu-burger" id="menu-burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </div>
+            <div class="header-responsive-menu" id="menu-list">
+              <ul class="header-menu-list">
+                <li class="header-menu-link"><a href="#">Inicio</a></li>
+                <li class="header-menu-link"><a href="#">Cotizar Seguro</a></li>
+                <li class="header-menu-link"><a href="#">Contactos</a></li>
+              </ul>
+            </div>
+        </div>
+    </header> 
+    <main class="main-conatactos">
+    <div class="container">  
+        <form id="contact" action="https://reqres.in/api/users" method="post">
+          <h3>Contactame</h3>
+          <h4>¡Contáctenos hoy y obtenga una respuesta en 24 horas!</h4>
+          <fieldset>
+            <input placeholder="Nombres" type="text" name="firt_name" id="firt_name" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Apellidos" type="text" name="last_name" id="last_name" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+              <input name="email" type="email" id="email" placeholder="email">
+          </fieldset>
+          <fieldset>
+            <input placeholder="Numero de telefono" name="phone" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Escribe tu consulta aqui..." name="comentarios"  tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" value="consulta" id="submit" >Enviar</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer id="footer" class="footer">
+      <!-- Menú flotante -->
+      <div class="menu-content">
+        <span class="menu-item" id="menu">
+            <img src="../assets/img/plus.svg" alt="Más">
+        </span>
+        <a href="https://github.com/AntonioR1999" target="_blank" class="menu-item">
+            <img src="../assets/img/github.svg" alt="github">
+        </a>
+        <a href="https://www.facebook.com/antonio.escobar.1999/" target="_blank" class="menu-item">
+            <img src="../assets/img/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com/in/antonio-rodrigues-25280017b/" target="_blank" class="menu-item">
+            <img src="../assets/img/linkedin.svg" alt="linkedin">
+        </a>
+    </div>
+    </footer>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
